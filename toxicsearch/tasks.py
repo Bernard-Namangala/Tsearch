@@ -3,11 +3,6 @@ from .scrape import get_all_movies, get_all_series
 import threading
 
 
-def printff():
-    for i in range(10):
-        print(i)
-
-
 def add_movies_to_database():
     movies_in_db = Movie.objects.all()
     movies_to_add = list(get_all_movies())
