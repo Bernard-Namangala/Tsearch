@@ -1,0 +1,154 @@
+i {
+  color: #64c837;
+}
+
+#results-row {
+  animation-name: results;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.btn a{
+color:#fff;
+}
+@keyframes results {
+  10% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#logo-icon {
+  animation-name: animate;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+}
+@keyframes animate {
+  10% {
+    font-size: 16px;
+  }
+  40% {
+    font-size: 17px;
+  }
+  80% {
+    font-size: 18px;
+  }
+
+  100% {
+    font-size: 20px;
+  }
+}
+
+.list-group-item:hover {
+  background: #87bdf3;
+  color: #fff;
+}
+.list-group-item a:hover{
+color: #fff;
+}
+
+input[name="search"] {
+  border-radius: 0.25rem 0 0rem 0.25rem;
+}
+.btn {
+  border-radius: 0 0.25rem 0.25rem 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.container {
+  min-height: 85vh;
+}
+#search-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+footer {
+  background: #343a40;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+}
+#footer-copywrite {
+  margin: auto;
+}
+
+#search-form {
+  animation-name: search-form-animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes search-form-animation {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+#promo-row {
+  animation-name: promo-row-animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes promo-row-animation {
+  0% {
+    left: 1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+#main-heading {
+  animation-name: main-heading-animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes main-heading-animation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
