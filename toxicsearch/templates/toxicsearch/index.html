@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+
+{% load static %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center" id="main-heading">
+            Search Toxicwap for Movies, TV series and Cartoons
+          </h1>
+        </div>
+      </div>
+      <div class="row mt-1">&nbsp;</div>
+      <div class="row">
+        <div class="col-md-12" id="search-form">
+          <form method="POST" action="{% url 'toxicsearch:search' %}">
+            {% csrf_token %}
+            <div class="d-table-cell w-100">
+             {{ form.search}}
+            </div>
+            <div class="d-table-cell align-middle">
+              <button id="search-btn" class="btn btn-success">
+                <i class="fas fa-search" id="search-icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-3">&nbsp;</div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4 text-center" id="promo-row">
+          <i class="fas fa-search fa-5x"></i>
+          <p class="lead">
+            Search for Movies, Tv series and Cartoons
+            place.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-4 text-center" id="promo-row">
+          <i class="fas fa-clone fa-5x"></i>
+          <p class="lead">
+            Compare different movies and series
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-4 text-center" id="promo-row">
+          <i class="fas fa-filter fa-5x"></i>
+          <p class="lead">
+            Filter the search results so that you can easily find what you are
+            looking for.
+          </p>
+        </div>
+      </div>
+    </div>
+
+{% endblock main_content %}
